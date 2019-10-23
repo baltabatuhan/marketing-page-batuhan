@@ -173,7 +173,8 @@ li {
 nav {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
   align-items: center;
   padding-bottom: 1%;
   padding-top: 2%;
@@ -185,6 +186,10 @@ nav {
 }
 nav .water-my-plants {
   margin-bottom: 3%;
+}
+nav .water-my-plants .top {
+  display: flex;
+  text-align: center;
 }
 nav a {
   width: 100%;
@@ -216,11 +221,13 @@ footer {
   padding: 0 15px;
 }
 .home .download-images {
+  border-top: 1px solid #dee2e6;
+  margin-top: 4%;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
-.home .download-images img {
+.home .download-images a {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
@@ -261,7 +268,9 @@ footer {
 .home .free-tr {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
-  padding: 50px 60px;
+  padding-left: 2%;
+  padding-top: 6%;
+  padding-bottom: 4%;
   display: flex;
   justify-content: center;
 }
