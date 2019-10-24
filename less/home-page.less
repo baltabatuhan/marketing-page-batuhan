@@ -11,41 +11,14 @@
     }
   }
 
-  .download-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
-    }
-    @media @phone {
-      .ios {
-        width: 50%;
-        height: 50%;
-        margin-left: 25%;
-      }
-      .plant2 {
-        width: 50%;
-        height: 50%;
-        margin-left: 25%;
-      }
-      .plant3 {
-        width: 50%;
-        height: 50%;
-        margin-left: 25%;
-      }
-    }
-  }
-
   .plant-images {
-    padding: 15px;
+    width: 100%;
     @media @phone {
       width: 100%;
       margin: 3% 0 0% 0;
+    }
+    @media @tablet {
+      width: 100%;
     }
     h3 {
       margin-top: 11px;
@@ -59,12 +32,14 @@
   .free-tr {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
+    padding-left: 2%;
+    padding-top: 6%;
+    padding-bottom: 4%;
     display: flex;
     justify-content: center;
     @media @phone {
       flex-direction: column-reverse;
-      margin: 0;
+      margin-top: 10%;
       padding: 15px;
     }
 
@@ -86,9 +61,11 @@
       .btn {
         .buttonmix(10px, 10px, green, white, pointer, 35%, center, 1.6rem);
         &:hover {
-          // The compiled color returned is #006667
           background-color: lighten(green, 35%);
           color: darken(white, 20%);
+        }
+        @media @tablet {
+          width: 100%;
         }
         @media @phone {
           width: 100%;
@@ -110,6 +87,47 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+    }
+  }
+  .download-images {
+    margin-top: 4%;
+    display: flex;
+    padding-bottom: 6%;
+
+    flex-wrap: wrap;
+    width: 100%;
+
+    a {
+      width: 28%;
+      margin: 20px 2.5%;
+      border-radius: 20px;
+      height: 100%;
+      img {
+        width: 100%;
+      }
+    }
+
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .ios {
+        width: 50%;
+        height: 50%;
+        margin-left: 25%;
+      }
+      .plant2 {
+        width: 50%;
+        height: 50%;
+        margin-left: 25%;
+      }
+      .plant3 {
+        width: 50%;
+        height: 50%;
+        margin-left: 25%;
       }
     }
   }
